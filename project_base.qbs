@@ -16,7 +16,11 @@ Project
         readonly property string projectBuildDirectory:  project.buildDirectory
         readonly property string projectSourceDirectory: project.sourceDirectory
 
-
+        configure:
+        {
+//            projectVesrsion = QbsUtl.getVersions(projectSourceDirectory + "/VERSION");
+//            projectGitRevision = QbsUtl.gitRevision(projectSourceDirectory);
+        }
     }
 
     readonly property var projectVersion: projectInfo.projectVersion
