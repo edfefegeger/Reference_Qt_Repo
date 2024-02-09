@@ -7,7 +7,8 @@ ProjectBase
 
     references:[
         "src/shared/shared.qbs",
-        "src/yaml/yaml-cpp/yaml.qbs",
+        "src/yaml/yaml.qbs",
+        "src/rapidjson/rapidjson.qbs",
         "main.cpp"
     ]
 }

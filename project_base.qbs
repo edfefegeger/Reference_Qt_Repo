@@ -1,6 +1,6 @@
 import qbs
-//import "qbs/imports/QbsUtl/qbsutl.js" as QbsUtl
-
+import "qbs/imports/QbsUtl/qbsutl.js" as QbsUtl
+import "project_control_base.qbs" as Control
 Project
 {
     minimumQbsVersion: "1.19.0"
@@ -18,8 +18,8 @@ Project
 
         configure:
         {
-//            projectVesrsion = QbsUtl.getVersions(projectSourceDirectory + "/VERSION");
-//            projectGitRevision = QbsUtl.gitRevision(projectSourceDirectory);
+            projectVesrsion = QbsUtl.getVersions(projectSourceDirectory + "/VERSION");
+            projectGitRevision = QbsUtl.gitRevision(projectSourceDirectory);
         }
     }
 
